@@ -1,0 +1,117 @@
+*, :before, :after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    font-family: "Bungee", "Aria-black", sans-serif;
+    color: white;
+    text-align: center;
+    background-color: skyblue;
+    background: url(img/sea_bg.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+div#board {
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 1024px;
+    height: 863px;
+    
+    margin: auto;
+}
+
+div#message-aria {
+    height: 60px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+table {
+    border-spacing: 0px;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-right: none;
+    border-top: none;
+}
+
+td:nth-of-type(2) {
+    border-left: none;
+}
+
+tr:nth-last-of-type(2) td {
+    border-bottom: none;
+}
+
+table .name-row,
+table .name-column {
+    font-size: 30px;
+    border: 2px solid transparent;
+}
+
+form {
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    
+    display: flex;
+    
+    padding: 20px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+form .enter-number {
+    font-family: "Roboto", "Aria", sans-serif;
+    background-color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 1);
+    font-size: 1em;
+    min-height: 40px;
+    
+    border: none;
+    
+    padding: 0 20px;
+    margin-right: 20px;
+    
+    border-radius: 5px;
+}
+
+form .btn-fire {
+    font-family: inherit;
+    
+    min-height: 40px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.hit {
+    background: url(img/ship.png) no-repeat center center;
+}
+
+.miss {
+    background: url(img/miss.png) no-repeat center center;
+    opacity: .6;
+}
+
+
+
+
+
+
